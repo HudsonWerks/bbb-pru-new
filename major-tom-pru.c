@@ -15,11 +15,6 @@
    is amiss.)
 ***/
 
-/***
-  Minor modifications by Charles Hamilton, 2015.
-  
-***/
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -127,7 +122,7 @@ int main(int argc, char **argv) {
       run the program just a whole lot of times). */
    rtn = prussdrv_pru_wait_event(PRU_EVTOUT_0);
 
-   printf("Major Tom's Test PRU program completed. Blast off number %d\n", rtn);
+   printf("PRU program completed, event number %d\n", rtn);
 
    /* clear the event, disable the PRU and let the library clean up */
    return pru_cleanup();
