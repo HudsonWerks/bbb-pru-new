@@ -28,7 +28,7 @@
 START:
         // initialize loop counter
 	MOV	r1, DELAYCOUNT
-
+	
         // wait for specified period of time
 DELAY:
 	SUB	r1, r1, 1     // decrement loop counter
