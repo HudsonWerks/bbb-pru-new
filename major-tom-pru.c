@@ -108,7 +108,7 @@ int main(int argc, char **argv) {
    }
 
    /* initialize the library, PRU and interrupt; launch our PRU program */
-   if(pru_setup("./example.bin")) {
+   if(pru_setup("./major-tom-pru.bin")) {
       pru_cleanup();
       return -1;
    }
